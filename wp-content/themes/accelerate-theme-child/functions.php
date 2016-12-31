@@ -46,3 +46,11 @@
 
 //Hook this custom post type function into the theme
 add_action( 'init', 'create_custom_post_types' );
+
+//Image function
+function accelerate_theme_support_stuff() {
+
+  add_image_size('archive-case-studies', 514, 379, array( 'left', 'top' ) ); 
+  
+	}
+add_action( 'after_setup_theme', 'accelerate_theme_support_stuff' );
